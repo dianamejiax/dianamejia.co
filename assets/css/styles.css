@@ -2,6 +2,51 @@ body{
   font-family:'IBM Plex Sans', sans-serif;
   font-size: 24px;
   margin: 0;
+  padding: 0;
+}
+
+body.colorBackground{
+  background: linear-gradient(to right,#F2DDD0, #fff, #FDDDD0,#FDDDC0);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 20s ease infinite;
+	-moz-animation: Gradient 20s ease infinite;
+	animation: Gradient 20s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
 }
 
 .wrapper{
@@ -10,15 +55,26 @@ body{
   max-width:1400px;
 }
 
+/*html:hover .cursor{  
+  opacity:1;
+  cursor: none;
+  z-index:1;
+}
+
+
+.cursor { 
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background-color: #202526;
+  position: absolute;
+  opacity:0;
+}*/
+
 *{ box-sizing:border-box;}
 
 div{
   vertical-align:top;
-}
-
-.column{
-  display:inline-block; 
-  padding:25px; 
 }
 
 a{
@@ -26,67 +82,297 @@ a{
   color:#000;
   cursor: pointer;
 }
-
 a:hover{
   text-decoration:underline;
 }
 
+.swapText{
+  font-weight:bold;
+}
 
-.column1{
-  border-right:solid #000 2px;
+.swapText:hover {
+  font-size: 0;
+  line-height: 0; 
+}
+
+.swapText:hover:before {
+  content: attr(data-hover);
+  font-size:18px;
+  line-height: 25px;
+  
+}
+
+.diana{
+  text-transform:uppercase;
+  font-size:18px;
+  letter-spacing:1px;
+  
+}
+
+
+/* projectLink hover + projectThumbnails */
+.projectThumbnail { 
+  position:absolute;
+  top:100px;
+  margin-left:200px;
+  opacity:0;
+}
+
+.projectLink:hover>.projectThumbnail{
+  opacity: 1;
+  transition: all 600ms ease;
+
+}
+
+.unfoldLink:hover>.unfoldThumbnail { 
+  display: block; 
+}
+
+.vegainsLink:hover>.vegainsThumbnail { 
+  display: block; 
+}
+
+.mineralsLink:hover>.mineralsThumbnail { 
+  display: block; 
+}
+
+.exaltLink:hover>.exaltThumbnail { 
+  display: block; 
+}
+
+.compassLink:hover>.compassThumbnail { 
+  display: block; 
+}
+
+.roadstersLink:hover>.roadstersThumbnail { 
+  display: block; 
+}
+
+.affinityLink:hover>.affinityThumbnail { 
+  display: block; 
+}
+
+.fnmLink:hover>.fnmThumbnail { 
+  display: block; 
+}
+
+.imgContainer {
+  position: relative;
+}
+
+.projectImages{
+  width: 60%;
+  height: auto;
+  position: absolute;
+  top:0;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 5px 5px 5px -2px rgba(0,0,0,0.2);
+}
+
+.img-wrap {
+  position: relative;
+  display: none;
+}
+
+.current {
+  display: block;
+}
+
+/* navigation icons */
+.closeButton{
+  position:fixed;
+  margin-top: 5px;
+  right: 30px;
+  top: 25px;
+  margin: 0;
+  padding: 0;
+}
+.navArrows{
+  position:fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 85%;
+  transition: all 300ms ease;
+
+}
+.nextButton{
+  margin-top:625px;
+  right:30px;
+  text-align:center;
+}
+
+.backButton{
+  margin-top:625px;
+  right:850px;
+  text-align:center;
+  /* display:none; */
+  
+}
+
+.backlink, .nextlink{
+  padding:0 80px 0 80px;
+  /* top right bottom left*/
+}
+
+/* Responsive Columns sideBar + projectsList */
+
+.column{
+  display:inline-block; 
+  padding:25px; 
+  float:left;
+}
+
+.sideBar{
+  border-right:solid #000 1px;
+  height:auto;
+  width:15%;
+  transition: all 300ms ease;
+  overflow: auto;
+}
+
+.sideBar-images{
+  text-align:center; 
+}
+
+.sideBar.expanded {
+  width: 40%;
   height:100%;
-  width:15%;
+  /*background-color:#f8f8f8;*/  
 }
 
-.column2{
- width:70%;
- padding: 100px 0px 0px 100px;
- /* top right bottom left*/
-}
-
-.column3{
-  width:15%;
-}
-
-
-.projects{
+.projectsTitles{
   list-style:none;
   padding: 0;
   font-size:30px;
-  text-transform: uppercase;
-  font-weight:300;
+  font-weight: 300;
 }
 
-.about{
+
+.projectsList {
+  width:85%;
+  height:auto;
+  /* padding:25px 0px 0px 100px;  */
+  transition: all 300ms ease;
+}
+
+.projectsList.collapsed {
+  width: 60%;
+}
+
+.navArrows.collapsed {
+  width: 60%;
+}
+
+.projectsSlide{
+  width:85%;
+  /* padding: 25px 0px 0px 100px; */
+  text-align: center;
+ /* top right bottom left*/
+ }
+
+
+.infoButton,.aboutButton{
   text-decoration:none;
   color:black;
   font-size:24px;
 }
 
+.infoBox{
+ overflow-y: scroll;
+ overflow-x:hidden;
+ z-index:-1;
+}
 
-@media only screen and (max-width:700px){
-  .column {
-  max-width: 500px;
-  }
-  
+.infoBox_content{
+  font-size:18px;
+  max-width:450px;
+  opacity: 0;
+  transition: all 300ms ease;
+}
+
+.expanded .infoBox_content{
+  opacity: 1;
+}
+
+
+@media only screen and (max-width:768px){
   .wrapper{
     max-width:500px;
   }
-
-  .column1{ width: calc(100% - 40px);}
-  .column2{ width: calc(100% - 40px);}
-  .column3{ width: calc(100% - 40px);}
-
-  .column1{
+  
+  .column {
+    max-width: 500px;
+  }
+  
+  .projectsList, .sideBar, .expanded, .collapsed { 
+    width: 100% !important;
+    height: auto;  
     border:none;
-    height:10%;
-    padding: 25px;
+    display: block;
   }
 
-  .column2{
+  .aboutSideBar{
+    border-bottom: 1px solid #000;
+  }
+
+  .projectsList{
     padding:25px;
   }
-}
+
+  .projectsList.collapsed {
+    display: none;
+  }
+
+  .projectsList a{
+   font-size:24px;
+  }
+
+  .sidebar.expanded .projectsList{
+    overflow:hidden;
+  }
+
+  .infoBox {
+    height: 0;
+    overflow: hidden;
+  }
+
+  .sidebar.expanded .infoBox {
+    height: auto;
+  }
+
+  .projectImages{
+    width:100%;
+    height: auto;
+  }
+
+  .projectLink:hover>.projectThumbnail{
+    opacity: 0;
+  }
+
+  .closeButton{
+    position:fixed;
+    margin-top: 5px;
+    right: 30px;
+    top: 25px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .backlink, .nextlink{
+    padding:0;
+    /* top right bottom left*/
+  }
+
+  .nextButton{
+    position:relative;
+    margin-top:450px;
+    right:-130px;
+  }
   
-
-
+  .backButton{
+    position:relative;
+    margin-top:450px;
+    right:130px;  
+  }
+}
