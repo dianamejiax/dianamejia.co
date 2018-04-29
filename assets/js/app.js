@@ -24,9 +24,6 @@ $('.infoButton').click(function(){
 	}	
 });
 
-$( function() {
-	$( ".projectThumbnail" ).draggable();
-} );
 
 
 $('.aboutButton').click(function(){
