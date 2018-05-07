@@ -61,7 +61,7 @@ $('.backButton').click(function(event){
 
 
 $(".img-wrap").each(function() {
-	$(this).css("top",(Math.random()*4)+"vw");
-	$(this).css("left",(Math.random()*-5) + "vw");
+	$(this).css("top",(Math.random()*5)+"vw");
+	$(this).css("left",(Math.random()*0) + "vw");
 });
 

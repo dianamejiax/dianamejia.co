@@ -237,25 +237,27 @@ a:hover{
   position:fixed;
   bottom: 50px;
   width: 85%;
+  text-align:center;
   transition: all 300ms ease;
 
 }
 .nextButton{
-  margin-top:500px;
-  right:30px;
-  text-align:center;
+  margin-top:500px; 
 }
 
 .backButton{
   margin-top:500px;
-  right:850px;
-  text-align:center;
   /* display:none; */ 
 }
 
-.backlink, .nextlink{
+.backLink, .nextLink{
   padding:0 80px 0 80px;
   /* top right bottom left*/
+}
+
+.backLink:hover, .nextLink:hover{
+  border-bottom: none;
+
 }
 
 /* Responsive Columns sideBar + projectsList */
