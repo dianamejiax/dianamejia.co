@@ -264,17 +264,18 @@ a:hover{
 
 .column{
   display:inline-block; 
-  padding:25px; 
+  /* top right bottom left*/
   float:left;
 }
 
 
 .sideBar{
-   border-right:solid #000 1px; 
+  border-right:solid #000 1px; 
   height:100%;
   width:15%;
   transition: all 300ms ease;
   overflow: auto;
+  padding:25px 25px; 0 0;  
 }
 
 .sideBar-images{
@@ -326,6 +327,7 @@ ul li{
 .infoButton,.aboutButton{
   text-decoration:none;
   color:black;
+  padding-top:25px;
 }
 
 .infoBox{
