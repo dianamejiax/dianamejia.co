@@ -1,5 +1,4 @@
 body{
-  /* font-family:'IBM Plex Sans', sans-serif;  */
   font-family: 'Work Sans', sans-serif;
   background-color:rgb(247, 234, 207); 
   font-weight:400; 
@@ -42,21 +41,6 @@ body.compass{
   max-width:1400px;
 }
 
-/*html:hover .cursor{   
-  opacity:1;
-  cursor: none !important;
-  z-index:1;
-}
-
- .cursor { 
-  height: 20px;
-  width: 20px;
-  border-radius: 20px;
-  background-color: #202526;
-  position: absolute;
-  opacity:0;
-} */
-
 *{ box-sizing:border-box;}
 
 div{
@@ -64,7 +48,6 @@ div{
 }
 .diana{
   position:fixed;
-  /* transform: rotate(-90deg); */
   right: 30px;
   margin-top: 5px;
   top: 25px;
@@ -346,6 +329,11 @@ ul li{
 
 
 @media only screen and (max-width:768px){
+
+  @media (hover: none) {
+    a:hover { border-bottom: 2px dotted currentColor }
+  }
+  
   .wrapper{
     max-width:500px;
   }
@@ -378,7 +366,6 @@ ul li{
 
   .projectsList a{
    font-size:20px;
-
   }
 
   .sidebar.expanded .projectsList{
@@ -412,7 +399,6 @@ ul li{
     padding: 0;
   }
 
- 
 
   .backlink, .nextlink{
     padding:0;
