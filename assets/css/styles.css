@@ -330,9 +330,11 @@ ul li{
 
 @media only screen and (max-width:768px){
 
-  @media (hover: none) {
-    a:hover { border-bottom: 2px dotted currentColor }
-  }
+
+a:hover { 
+  display: none; 
+}
+  
   
   .wrapper{
     max-width:500px;
