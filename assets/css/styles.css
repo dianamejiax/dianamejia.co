@@ -42,21 +42,6 @@ body.compass{
   max-width:1400px;
 }
 
-/*html:hover .cursor{   
-  opacity:1;
-  cursor: none !important;
-  z-index:1;
-}
-
- .cursor { 
-  height: 20px;
-  width: 20px;
-  border-radius: 20px;
-  background-color: #202526;
-  position: absolute;
-  opacity:0;
-} */
-
 *{ box-sizing:border-box;}
 
 div{
@@ -87,17 +72,18 @@ a:hover{
 /* projectLink hover + projectThumbnails */
 
 .projectSubtitle{
-  text-transform:uppercase;
-  font-size:14px;
-  opacity:0;
-  line-height: 0;
+  font-style: italic;
+  font-weight:300;
+  font-size:18px;
+
 }
 
 .projectThumbnail { 
-  position:absolute;
-  top:100px;
-  margin-left:350px;
+  position:absolute;;
+  top:50px;
+  margin-left:250px;
   opacity:0;
+  z-index:-1;
 }
 
 .projectLink:hover>.projectThumbnail{
@@ -203,6 +189,7 @@ a:hover{
 
 .imgContainer {
   position: relative;
+  z-index:-10;
 }
 
 .projectsScroll{
@@ -216,14 +203,25 @@ a:hover{
   width: 60%;
 }
 
+.images-hero{
+  width:90%;
+  /* width:100% !important; */
+  text-align:center;
+  margin-top: -100px;
+}
+
 .images-scroll{
-  width:70%;
+  width:90%;
   text-align:center;
 }
 
 .images{
   padding-top: 20px;
   /* top right bottom left*/
+}
+
+span.projectTitle{
+  z-index:500;
 }
 
 .projectImages{
@@ -233,7 +231,7 @@ a:hover{
   top:0;
   left: 50%;
   transform: translateX(-50%);
-  box-shadow: 5px 5px 5px -2px rgba(0,0,0,0.2);
+  /* box-shadow: 5px 5px 5px -2px rgba(0,0,0,0.2); */
 }
 
 .img-wrap {
@@ -260,6 +258,7 @@ a:hover{
   width: 85%;
   text-align:center;
   transition: all 300ms ease;
+  z-index:1;
 
 }
 .nextButton{
@@ -288,6 +287,13 @@ a:hover{
   float:left;
 }
 
+.aboutSidebar{
+  height:auto !important;
+}
+
+.aboutSidebar.expanded{
+height: 100% !important; 
+}
 
 .sideBar{
   border-right:solid #000 1px; 
