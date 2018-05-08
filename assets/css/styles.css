@@ -205,6 +205,27 @@ a:hover{
   position: relative;
 }
 
+.projectsScroll{
+  height: 100%;
+  width:85%;
+  overflow: scroll;
+  text-align:center;  
+}
+
+.projectsScroll.collapsed {
+  width: 60%;
+}
+
+.images-scroll{
+  width:70%;
+  text-align:center;
+}
+
+.images{
+  padding-top: 20px;
+  /* top right bottom left*/
+}
+
 .projectImages{
   width: 60%;
   height: auto;
@@ -257,7 +278,6 @@ a:hover{
 
 .backLink:hover, .nextLink:hover{
   border-bottom: none;
-
 }
 
 /* Responsive Columns sideBar + projectsList */
@@ -275,7 +295,7 @@ a:hover{
   width:15%;
   transition: all 300ms ease;
   overflow: auto;
-  padding:25px 25px; 0 0;  
+  padding:25px 25px 0; 
 }
 
 .sideBar-images{
@@ -312,6 +332,7 @@ ul li{
   width: 60%;
 }
 
+
 .navArrows.collapsed {
   width: 60%;
 }
@@ -324,10 +345,10 @@ ul li{
  }
 
 
+
 .infoButton,.aboutButton{
   text-decoration:none;
   color:black;
-  padding-top:25px;
 }
 
 .infoBox{
@@ -365,6 +386,12 @@ ul li{
     display: block;
   }
 
+  .projectsScroll{
+    margin:auto;
+    width:100%;
+    text-align:center;  
+  }
+
   .aboutSideBar{
     /* border-bottom: 1px solid #000; */
   }
@@ -376,7 +403,7 @@ ul li{
   }
 
 
-  .projectsList.collapsed {
+  .projectsScroll.collapsed,.projectsList.collapsed {
     display: none;
   }
 
@@ -398,9 +425,10 @@ ul li{
     height: auto;
   }
 
-  .projectImages{
+  .projectImages, .images-scroll{
     width:100%;
     height: auto;
+    text-align:center;
   }
 
   .projectLink:hover>.projectThumbnail{

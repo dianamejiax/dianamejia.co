@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 $('.infoButton,.aboutButton').click(function() {
 	$('.sideBar').toggleClass('expanded');
-	$('.projectsList').toggleClass('collapsed');
+	$('.projectsList, .projectsScroll').toggleClass('collapsed');
 	$('.navArrows').toggleClass('collapsed');
 	
 });
