@@ -249,7 +249,7 @@ a:hover{
 .closeButton{
   position:fixed;
   margin-top: 5px;
-  right: 40px;
+  right: 25px;
   top: 25px;
   margin: 0;
   padding: 0;
@@ -344,7 +344,12 @@ ul li{
  /* top right bottom left*/
  }
 
-
+.infoButton, .aboutButton {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  z-index: 5000;
+}
 
 .infoButton,.aboutButton{
   text-decoration:none;
