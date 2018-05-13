@@ -24,7 +24,7 @@ body.fnm{
 }
 
 body.vegains{
-  background-color: #DEE1D6;
+  background-color: rgb(247, 234, 207);
 }
 
 body.affinity{
@@ -107,7 +107,8 @@ a:hover{
   display: block;
   top: 0; bottom: 0; left: 0; right: 0;
   z-index: -1;
-  background-color: #DEE1D6;
+  /* background-color: #DEE1D6; */
+  background-color: rgb(247, 234, 207);
 }
 
 
@@ -468,7 +469,7 @@ ul li{
     height: auto;
   }
 
-  .projectImages, .images-scroll{
+  .projectImages, .images-scroll, .images-hero{
     width:100%;
     height: auto;
     text-align:center;
