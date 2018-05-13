@@ -70,12 +70,6 @@ a:hover{
 
 /* projectLink hover + projectThumbnails */
 
-.projectSubtitle{
-  font-style: italic;
-  font-weight:300;
-  font-size:18px;
-
-}
 
 .projectThumbnail { 
   position:absolute;;
@@ -195,7 +189,7 @@ a:hover{
   height: 100%;
   width:85%;
   overflow: scroll;
-  text-align:center;  
+  /* text-align:center;   */
 }
 
 .projectsScroll.collapsed {
@@ -203,20 +197,48 @@ a:hover{
 }
 
 .images-hero{
-  width:100%;
+  width:70%;
   /* width:100% !important; */
-  text-align:center;
-  margin-top: -100px;
+  /* text-align:center; */
+  /* margin-top: -100px; */
 }
 
 .images-scroll{
-  width:90%;
+  width:70%;
   text-align:center;
+  margin-top:25px;
 }
 
 .images{
   padding-top: 20px;
   /* top right bottom left*/
+}
+
+.descriptions{
+  width:50%;
+}
+
+.initialSubtitle{
+  /* margin-top: 0px; */
+  font-size:20px;
+  /* font-weight: bold; */
+}
+
+.projectSubtitle{
+  font-size:20px;
+  margin-top:100px;
+  /* font-weight: bold; */
+}
+.projectDescriptions{
+  font-size:16px;
+  margin-top:20px;
+  padding: 0px 200px 0px 200px;
+  text-align: left;
+  
+}
+
+.lastDescriptions{
+  margin-bottom:50px;
 }
 
 span.projectTitle{
@@ -320,6 +342,12 @@ height: 100% !important;
   /* text-transform:uppercase; */
 }
 
+.projectCategory{
+  font-size:18px;
+  font-style:italic;
+  font-weight:300;
+}
+
 
 ul li{  
   margin: 25px 0;
@@ -419,6 +447,12 @@ ul li{
   .projectsList a{
    font-size:20px;
 
+  }
+
+  .projectDescriptions{
+    font-size:16px;
+    margin-top:20px;
+    padding: 0px 20px 0px 20px;
   }
 
   .sidebar.expanded .projectsList{
