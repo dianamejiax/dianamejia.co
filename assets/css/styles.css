@@ -35,6 +35,11 @@ body.compass{
   background-color: #D7DFE1;
 }
 
+body.ancestor{
+  /* background-color: #D7EDE5; */
+  background-color: #F5E2B8;
+}
+
 .wrapper{
   width:100%;
   margin:0 auto;
@@ -123,6 +128,19 @@ a:hover{
   top: 0; bottom: 0; left: 0; right: 0;
   z-index: -1;
   background-color: #E1EAEB;
+}
+
+.ancestorLink:hover>.ancestorThumbnail { 
+  display: block; 
+}
+
+.ancestorLink:hover:before { 
+  content: '';
+  position: fixed;
+  display: block;
+  top: 0; bottom: 0; left: 0; right: 0;
+  z-index: -1;
+  background-color: #F5E2B8;
 }
 
 .exaltLink:hover>.exaltThumbnail { 
