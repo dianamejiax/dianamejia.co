@@ -403,6 +403,11 @@ ul li{
   z-index: 5000;
 }
 
+.closeButton{
+  z-index: 5000;
+
+}
+
 .infoButton,.aboutButton{
   text-decoration:none;
   color:black;
