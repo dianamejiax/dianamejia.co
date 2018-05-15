@@ -346,13 +346,23 @@ span.projectTitle{
   float:left;
 }
 
+
 .aboutSidebar{
-  height:auto !important;
+  border-right:solid #000 1px; 
+  height:130%;
+  width:15%;
+  transition: all 300ms ease;
+  overflow: auto;
+  padding:25px 25px 0; 
 }
 
 .aboutSidebar.expanded{
-height: auto !important; 
+  width: 40%;
+  height:130%;
 }
+
+
+
 
 .sideBar{
   border-right:solid #000 1px; 
@@ -369,7 +379,7 @@ height: auto !important;
 
 .sideBar.expanded {
   width: 40%;
-  height:100%;
+  height:auto;
 
 }
 

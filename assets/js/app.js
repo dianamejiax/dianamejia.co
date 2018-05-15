@@ -8,7 +8,7 @@ $(document).ready(function() {
 });
 
 $('.infoButton,.aboutButton').click(function() {
-	$('.sideBar').toggleClass('expanded');
+	$('.sideBar, .aboutSidebar').toggleClass('expanded');
 	$('.projectsList, .projectsScroll').toggleClass('collapsed');
 	$('.navArrows').toggleClass('collapsed');
 	
