@@ -473,7 +473,7 @@ ul li{
     max-width: 500px;
   }
   
-  .projectsList, .sideBar, .expanded, .collapsed { 
+  .projectsList, .sideBar, .aboutSidebar, .expanded, .collapsed { 
     width: 100% !important;
     height: auto;  
     border:none;
@@ -486,9 +486,7 @@ ul li{
     text-align:center;  
   }
 
-  .aboutSideBar{
-    /* border-bottom: 1px solid #000; */
-  }
+
 
   .projectsList{
     padding:25px;
@@ -515,12 +513,20 @@ ul li{
     overflow:hidden;
   }
 
+  .aboutSidebar.expanded .projectsList{
+    overflow:hidden;
+  }
+
   .infoBox {
     height: 0;
     overflow: hidden;
   }
 
   .sidebar.expanded .infoBox {
+    height: 100%;
+  }
+
+  .aboutSidebar.expanded .infoBox {
     height: 100%;
   }
 
