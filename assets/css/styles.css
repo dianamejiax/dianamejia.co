@@ -300,6 +300,8 @@ span.projectTitle{
 }
 
 /* navigation icons */
+
+  
 .closeButton{
   position:fixed;
   margin-top: 5px;
@@ -310,7 +312,7 @@ span.projectTitle{
 }
 .navArrows{
   position:fixed;
-  bottom: 50px;
+  bottom: 90px;
   width: 85%;
   text-align:center;
   transition: all 300ms ease;
@@ -509,7 +511,7 @@ ul li{
   }
 
   .projectImages, .images-scroll, .images-hero{
-    width:100%;
+    width:90%;
     height: auto;
     text-align:center;
   }
